@@ -1,0 +1,28 @@
+.btn {
+  display: inline-block;
+  padding: 0.5rem 0.5rem;
+  height: fit-content;
+  font-size: inherit;	
+  font-weight: 400;
+  line-height: 1.5rem;
+  text-align: center;
+  background-color: transparent;
+  border-radius: var(--border-radius);
+  transition: all 100ms ease-in-out;
+  cursor: pointer;
+  font-family: inherit;
+  &--primary {
+    background-color: var(--primary-color);
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 0.1rem var(--secondary-dark-color);
+    }
+  }
+  &--secondary {
+    background-color: var(--secondary-color);
+    &:hover,
+    &:focus {
+      box-shadow: 0 0 0 0.1rem var(--secondary-dark-color);
+    }
+  }
+}
